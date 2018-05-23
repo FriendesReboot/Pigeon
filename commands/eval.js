@@ -5,7 +5,7 @@ function clean(text) {
       return text;
 }
 exports.run = (client, message, args) => {
-    if(message.author.id !== 424367587934339084) return;
+    if(message.author.id !== "424367587934339084") return;
     try {
       const code = args.join(" ");
       let evaled = eval(code);
