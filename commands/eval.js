@@ -17,5 +17,4 @@ exports.run = (client, message, args) => {
     } catch (err) {
       message.channel.send(`\`ERROR\` \`\`\`xl\n${clean(err)}\n\`\`\``);
     }
-  }
 }
