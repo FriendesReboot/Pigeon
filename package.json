@@ -1,0 +1,17 @@
+{
+  "name": "Package",
+  "version": "1.0.0",
+  "description": "Pigeon Package",
+  "main": "Brain.js",
+  "engines": {
+      "node": "8.x",
+      "npm": "*"
+  },
+  "keywords": [
+    "heroku",
+    "discord.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/synicalsyntax/discord.js-heroku/issues"
+  },
+}
