@@ -7,11 +7,11 @@
       "node": "8.x",
       "npm": "*"
   },
-  "main": "bot.js",
+  "main": "Brain.js",
 
   "scripts": {
 
-    "start": "node bot.js"
+    "start": "node Brain.js"
 
   },
 
