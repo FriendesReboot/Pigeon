@@ -5,7 +5,10 @@
     return text;
 };
 exports.run = (client, message, args) => {
-    if(message.author.id !== "424367587934339084") return;
+    if(message.author.id !== "424367587934339084") {
+      message.reply(`\`ERROR\` \`\`\`xl\nNice try, but no.\n\`\`\``);
+      return
+    };
     try {
       const code = args.join(" ");
       let evaled = eval(code);
@@ -16,7 +19,5 @@ exports.run = (client, message, args) => {
       message.channel.send(clean(evaled), {code:"xl"});
     } catch (err) {
       message.channel.send(`\`ERROR\` \`\`\`xl\n${clean(err)}\n\`\`\``);
-    } else {
-      message.reply(`\`ERROR\` \`\`\`xl\nNice try, but no.\n\`\`\``)
     }
 }
