@@ -8,6 +8,8 @@ exports.run = (client, message, args) => {
       const argumentals = args.join(" ");
       if (argumentals === "me a beach ball") {
         message.reply("Here you go! <a:BouncingBeachBall:449383018793271307>");
+      } else if (argumentals === "me a mac wait cursor") {
+        message.reply("Spinning beach ball of doom... Well, can't stop ya. <a:BeachBall:449382607185117184>");
       } else {
         message.reply("I cannot give that to you, sorry :(");
       }
