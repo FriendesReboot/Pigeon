@@ -5,8 +5,8 @@
     return text;
 };
 exports.run = (client, message, args) => {
-      const a = args.join(" ");
-      if a === "me a beach ball" {
+      const argumentals = args.join(" ");
+      if (argumentals === "me a beach ball") {
         message.reply("Here you go! <a:BouncingBeachBall:449383018793271307>");
       } else {
         message.reply("I cannot give that to you, sorry :(");
