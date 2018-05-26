@@ -28,6 +28,7 @@ client.on("message", message => {
     let commandFile = require(`./commands/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
+    message.reply("That's... not a command. :(")
     console.error(err);
   }
 });
