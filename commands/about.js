@@ -15,5 +15,5 @@ exports.run = (Discord, client, message, args) => {
         .addField("Owner", "ConJoined#2400", true)
         .addField("Contributors", "muhammed51#5559, ConJoined#2400", true)
         .setTimestamp();
-   message.reply({ HelpEmbed })
+   message.reply({ embed: HelpEmbed })
 }
