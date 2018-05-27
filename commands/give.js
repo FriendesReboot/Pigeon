@@ -14,13 +14,41 @@ exports.run = (Discord,client, message, args) => {
       const argumentals = args.join(" ");
       const lowerargumentals = argumentals.toLowerCase();
       if (lowerargumentals === "me a beach ball") {
-        message.reply("Here you go! <a:BouncingBeachBall:449383018793271307>");
+        const embed = new  Discord.RichEmbed()
+        .setTitle("Here's your Beach Ball")
+        .setDescription("Here's you go! <a:BouncingBeachBall:449383018793271307>")
+        .setAuthor(message.author.username, message.author.displayAvatarURL)
+        .setFooter("Requested by " + message.author.tag, message.author.displayAvatarURL)
+        .setColor([135, 21, 153])
+        .setTimestamp();
+        message.reply({ embed } );
       } else if (lowerargumentals === "me a mac wait cursor") {
-        message.reply("Spinning beach ball of doom... Well, can't stop ya. <a:BeachBall:449382607185117184>");
+        const embed = new  Discord.RichEmbed()
+        .setTitle("Here's your Wait Cursor")
+        .setDescription("Spinning beach ball of doom... We'll, can't stop ya. <a:BeachBall:449382607185117184>")
+        .setAuthor(message.author.username, message.author.displayAvatarURL)
+        .setFooter("Requested by " + message.author.tag, message.author.displayAvatarURL)
+        .setColor([135, 21, 153])
+        .setTimestamp();
+        message.reply({ embed });
       } else if (lowerargumentals === "me a finobe") {
-        message.reply("Here's your Finobe! https://finobe.com");
+        const embed = new  Discord.RichEmbed()
+        .setTitle("Here's your Finobe")
+        .setDescription("Oh! Here you go! [The Finobe Website Link.](https://www.finobe.com)")
+        .setAuthor(message.author.username, message.author.displayAvatarURL)
+        .setFooter("Requested by " + message.author.tag, message.author.displayAvatarURL)
+        .setColor([135, 21, 153])
+        .setTimestamp();
+        message.reply({embed});
       } else if (lowerargumentals === "me finobe") {
-        message.reply("Here's your Finobe! https://finobe.com");
+        const embed = new  Discord.RichEmbed()
+        .setTitle("Here's your Finobe")
+        .setDescription("Oh! Here you go! [The Finobe Website Link.](https://www.finobe.com)")
+        .setAuthor(message.author.username, message.author.displayAvatarURL)
+        .setFooter("Requested by " + message.author.tag, message.author.displayAvatarURL)
+        .setColor([135, 21, 153])
+        .setTimestamp();
+        message.reply({embed});
       } else if (lowerargumentals === "me help") {
         message.reply("Oh no! Some help is on it's way! 🚑");
         const HelpEmbed = new  Discord.RichEmbed()
