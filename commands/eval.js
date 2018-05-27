@@ -4,7 +4,7 @@
       else
     return text;
 };
-exports.run = (client, message, args) => {
+exports.run = (Discord, client, message, args) => {
     if(message.author.id !== "424367587934339084") {
       message.reply(`\`ERROR\` \`\`\`xl\nNice try, but no.\n\`\`\``);
       return
