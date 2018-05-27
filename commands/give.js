@@ -36,8 +36,8 @@ exports.run = (client, message, args) => {
         .addBlankField(true)
         .addField("NSFW", "To see NSFW commands, type Pigeon, nsfw help in a NSFW channel")
         .setTimestamp();
-        message.author.send("Transporting help to your place...")
-        message.author.send({embed: HelpEmbed})
+        message.author.send("Transporting help to your place...");
+        message.author.send({embed: HelpEmbed});
       } else if (lowerargumentals === "me some help") 
         message.reply("Oh no! Some help is on it's way! 🚑");
         const HelpEmbed = new  Discord.RichEmbed()
@@ -53,8 +53,8 @@ exports.run = (client, message, args) => {
         .addBlankField(true)
         .addField("NSFW", "To see NSFW commands, type Pigeon, nsfw help in a NSFW channel")
         .setTimestamp();
-        message.author.send("Transporting help to your place...")
-        message.author.send({embed: HelpEmbed})
+        message.author.send("Transporting help to your place...");
+        message.author.send({embed: HelpEmbed});
       } else {
         message.reply("I cannot give that to you, sorry :(");
       }
