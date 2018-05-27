@@ -7,7 +7,7 @@ exports.run = (Discord, client, message, args) => {
         .setColor([135, 21, 153])
         .setThumbnail("https://cdn.discordapp.com/avatars/450288720151707658/81a8e401f8e4f58292de9de35f85bf18.png?size=256")
         .addField("Build", "1002", true)
-        .addField("Version", "Professional Unstable", true)
+        .addField("Version", "Professional", true)
         .addField("Server Count", client.guilds.size.toString(), true)
         .addField("Servers Inside", client.guilds.map(g => g.name).join("\n"), true)
         .addField("How to Get", "Invite Only", true)
