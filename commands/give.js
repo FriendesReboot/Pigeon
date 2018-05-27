@@ -10,7 +10,7 @@ function clean(text) {
       else
     return text;
 };
-exports.run = (client, message, args) => {
+exports.run = (Discord,client, message, args) => {
       const argumentals = args.join(" ");
       const lowerargumentals = argumentals.toLowerCase();
       if (lowerargumentals === "me a beach ball") {
