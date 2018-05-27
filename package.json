@@ -1,7 +1,7 @@
 {
-  "name": "Package Pro Unstable",
+  "name": "Package",
   "version": "1.0.0",
-  "description": "Pigeon Package",
+  "description": "Pigeon Package Pro Unstable",
   "main": "Brain.js",
   "engines": {
       "node": "8.x",
