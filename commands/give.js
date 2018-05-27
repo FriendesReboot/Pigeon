@@ -6,14 +6,13 @@
 };
 exports.run = (client, message, args) => {
       const argumentals = args.join(" ");
-      if (argumentals === "me a beach ball") {
+      const lowerargumentals = argumentals.toLowerCase();
+      if (lowerargumentals === "me a beach ball") {
         message.reply("Here you go! <a:BouncingBeachBall:449383018793271307>");
-      } else if (argumentals === "me a mac wait cursor") {
+      } else if (lowerargumentals === "me a mac wait cursor") {
         message.reply("Spinning beach ball of doom... Well, can't stop ya. <a:BeachBall:449382607185117184>");
-      } else if (argumentals === "me a Finobe") {
+      } else if (lowerargumentals === "me a finobe") {
         message.reply("Here's your Finobe! https://finobe.com");
-      } else if (argumentals === "me a finobe") {
-            message.reply("Wrong spelling?");
       } else {
         message.reply("I cannot give that to you, sorry :(");
       }
