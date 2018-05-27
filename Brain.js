@@ -16,7 +16,7 @@ fs.readdir("./events/", (err, files) => {
 });
 
 client.on("message", message => {
-  const lowercasemsg = message.toLowerCase();
+  const lowercasemsg = message.toString().toLowerCase();
   if (message.author.bot) return;
   if(lowercasemsg.content.indexOf(prefix) !== 0) return;
 
