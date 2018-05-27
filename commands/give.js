@@ -38,7 +38,7 @@ exports.run = (client, message, args) => {
         .setTimestamp();
         message.author.send("Transporting help to your place...");
         message.author.send({embed: HelpEmbed});
-      } else if (lowerargumentals === "me some help") 
+      } else if (lowerargumentals === "me some help") {
         message.reply("Oh no! Some help is on it's way! 🚑");
         const HelpEmbed = new  Discord.RichEmbed()
         .setTitle("Your Help 🚑")
