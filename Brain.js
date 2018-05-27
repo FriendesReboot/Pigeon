@@ -27,7 +27,7 @@ client.on("message", message => {
   // The list of if/else is replaced with those simple 2 lines:
   try {
     let commandFile = require(`./commands/${command}.js`);
-    commandFile.run(client, message, args);
+    commandFile.run(Discord, client, message, args);
   } catch (err) {
     message.reply("That's... not a command. :(")
     console.error(err);
