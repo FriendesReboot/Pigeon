@@ -25,16 +25,16 @@ exports.run = (Discord,client, message, args) => {
         message.reply("Oh no! Some help is on it's way! 🚑");
         const HelpEmbed = new  Discord.RichEmbed()
         .setTitle("Your Help 🚑")
-        .setDescription("Hey! I've got your help! To request me, say Pigeon, in any spelling!")
+        .setDescription("Hey! I've got your help! To request me, say ppu! in any spelling!")
         .setURL("https://discordapp.com")
         .setAuthor(message.author.username, message.author.displayAvatarURL)
         .setFooter("Requested by " + message.author.tag, message.author.displayAvatarURL)
-        .setColor(316268)
+        .setColor([135, 21, 153])
         .setThumbnail("https://cdn.discordapp.com/avatars/442358815690588200/0a89ae8f11cbaac2a3223b9531ef9ec9.png?size=256")
         .addField("Fun", "Pigeon, give me [blank]\nDescription:\nGives you stuff\nThings to request:\nFinobe, Beach Ball, \nMac Wait Cursor,\nHelp\n ", true)
         .addField("Informational", "Pigeon, give me help \nAlias: Pigeon, give me some help\nDescription:\nGives you help.\n ", true)
         .addBlankField(true)
-        .addField("NSFW", "To see NSFW commands, type Pigeon, nsfw help in a NSFW channel")
+        .addField("NSFW", "To see NSFW commands, type ppu!nsfw help in a NSFW channel")
         .setTimestamp();
         message.author.send("Transporting help to your place...");
         message.author.send({embed: HelpEmbed});
@@ -42,11 +42,11 @@ exports.run = (Discord,client, message, args) => {
         message.reply("Oh no! Some help is on it's way! 🚑");
         const HelpEmbed = new  Discord.RichEmbed()
         .setTitle("Your Help 🚑")
-        .setDescription("Hey! I've got your help! To request me, say Pigeon, in any spelling!")
+        .setDescription("Hey! I've got your help! To request me, say ppu! in any spelling! (BETA VERSION)")
         .setURL("https://discordapp.com")
         .setAuthor(message.author.username, message.author.displayAvatarURL)
         .setFooter("Requested by " + message.author.tag, message.author.displayAvatarURL)
-        .setColor(316268)
+        .setColor([135, 21, 153])
         .setThumbnail("https://cdn.discordapp.com/avatars/442358815690588200/0a89ae8f11cbaac2a3223b9531ef9ec9.png?size=256")
         .addField("Fun", "Pigeon, give me [blank]\nDescription:\nGives you stuff\nThings to request:\nFinobe, Beach Ball, \nMac Wait Cursor,\nHelp\n ", true)
         .addField("Informational", "Pigeon, give me help \nAlias: Pigeon, give me some help\nDescription:\nGives you help.\n ", true)
