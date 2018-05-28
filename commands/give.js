@@ -12,7 +12,7 @@ function clean(text) {
 };
 exports.run = (Discord,client, message, args) => {
       if (message.channel.type === "dm") { // Kill switch for if the message is in DMs
-        message.reply("You can't use this command in DMs.")
+        message.reply("<Error:449010650010615828> I can't give something in DMs!")
         return;
       }
       const argumentals = args.join(" ");
