@@ -10,15 +10,15 @@ exports.run = (Discord, client, message, args) => {
       message.channel.send({ embed })
       return
     };
+        function Ting(item) {
+                var upchannel = item.channels.find("pg-updates");
+               if(!upchannel) return;
+               upchannel.send("<:info:449011075569156097> Update: " + messageToSend);
+        }
         const messageToSend = args.join(" ");
         var guildList = client.guilds.array();
         try {
-            guildList.forEach(guild => {
-               const upchannel = guild.channels.find("pg-updates");
-               if(!upchannel) return;
-               upchannel.send("<:info:449011075569156097> Update: " + messageToSend);
-               
-         });
+            guildList.forEach(Ting);
         message.channel.send("<:check:449010650019135519> Ran successfully")
         } catch (err) {
             message.channel.send("<:error:449010650010615828> Failed to run");
