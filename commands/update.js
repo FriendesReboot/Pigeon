@@ -16,7 +16,7 @@ exports.run = (Discord, client, message, args) => {
             guildList.forEach(guild => {
                const upchannel = guild.channels.find("pg-updates");
                if(!upchannel) return;
-               upchannel.send("<:info:449011075569156097> Update: " + messageToSend)
+               upchannel.send("<:info:449011075569156097> Update: " + messageToSend);
                
          });
         message.channel.send("<:check:449010650019135519> Ran successfully")
