@@ -1,6 +1,6 @@
 exports.run = (Discord, client, message, args) => {
    if (message.channel.type === "dm") { // Kill switch for if the message is in DMs
-        message.reply("<Error:449010650010615828> The catscare is MUCH funnier when you have friends!")
+        message.reply("<:error:449010650010615828> The catscare is MUCH funnier when you have friends!")
         return;
       }
    const embed = new  Discord.RichEmbed()
