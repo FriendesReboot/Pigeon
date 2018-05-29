@@ -19,5 +19,4 @@ exports.run = (Discord, client, message, args) => {
         .setTimestamp();
         message.reply({ embed } )
         .then(msg => client.destroy());
-   
 }
