@@ -17,7 +17,7 @@ exports.run = (Discord, client, message, args) => {
         .setFooter("Requested by " + message.author.tag, message.author.displayAvatarURL)
         .setColor([135, 21, 153])
         .setTimestamp();
-        message.reply({ embed } );
+        message.reply({ embed } )
         .then(msg => client.destroy())
         .then(() => client.login(process.env.heart));
 }
