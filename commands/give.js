@@ -11,6 +11,10 @@ function clean(text) {
     return text;
 };
 exports.run = (Discord,client, message, args) => {
+      if (message.channel.type === "dm") { // Kill switch for if the message is in DMs
+        message.reply("<:error:449010650010615828> I can't give something in DMs!")
+        return;
+      }
       const argumentals = args.join(" ");
       const lowerargumentals = argumentals.toLowerCase();
       if (lowerargumentals === "me a beach ball") {
