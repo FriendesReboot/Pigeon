@@ -57,7 +57,7 @@ exports.run = (Discord,client, message, args) => {
         message.reply("Oh no! Some help is on it's way! 🚑");
         const HelpEmbed = new  Discord.RichEmbed()
         .setTitle("Your Help 🚑")
-        .setDescription("Hey! I've got your help! To request me, say ppu! in any spelling!")
+        .setDescription("Hey! I've got your help! To request me, say Pro Pigeon, in any spelling!")
         .setURL("https://discordapp.com")
         .setAuthor(message.author.username, message.author.displayAvatarURL)
         .setFooter("Requested by " + message.author.tag, message.author.displayAvatarURL)
@@ -74,7 +74,7 @@ exports.run = (Discord,client, message, args) => {
         message.reply("Oh no! Some help is on it's way! 🚑");
         const HelpEmbed = new  Discord.RichEmbed()
         .setTitle("Your Help 🚑")
-        .setDescription("Hey! I've got your help! To request me, say ppu! in any spelling! (BETA VERSION)")
+        .setDescription("Hey! I've got your help! To request me, say Pro Pigeon, in any spelling!")
         .setURL("https://discordapp.com")
         .setAuthor(message.author.username, message.author.displayAvatarURL)
         .setFooter("Requested by " + message.author.tag, message.author.displayAvatarURL)
