@@ -29,9 +29,9 @@ client.on("message", message => {
     let commandFile = require(`./commands/${command}.js`);
     commandFile.run(Discord, client, message, args);
   } catch (err) {
-    message.reply("That's... not a command. :(")
+    message.reply("This command has not been found. **.search** is the system command search function.")
     console.error(err);
   }
 });
 
-client.login(process.env.heart);
+client.login(process.env.token);
