@@ -2,7 +2,7 @@
   "name": "Package",
   "version": "1.0.0",
   "description": "Pigeon Package Pro Unstable",
-  "main": "Brain.js",
+  "main": "cd.js",
   "engines": {
       "node": "8.x",
       "npm": "*"
